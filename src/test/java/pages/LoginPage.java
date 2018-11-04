@@ -24,6 +24,7 @@ public class LoginPage extends Hooks {
         this.driver = driver;
         this.driver = new SafariDriver();
         this.driver.manage().window().maximize();
+        this.driver.manage().deleteAllCookies();
         this.driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
     }
 
